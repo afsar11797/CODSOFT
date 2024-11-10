@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.head, .foot{
+    text-align: center;
+    color: #ffffff;
+}
+.head{
+    font-size: 2.5em;
+    padding-bottom: 20px;
+    font-weight: 900;
+}
+.foot{
+    font-size: 1.5em;
+    padding-top: 50px;
+}
+.foot a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #ffffff;
+}
+body{
+    height: 100vh;
+    font-size: 1em;
+    background-image: linear-gradient(135deg,rgb(80, 109, 110), rgba(144, 214, 216, 0.5));
+}
+.calculator{
+    width: 332px;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 25px 40px black;
+    background-image: linear-gradient(315deg, rgb(0, 0, 0), rgb(57, 57, 58));
+    color: #ffffff;
+}
+.numpad .item{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 140px;
+    border-radius: 50px;
+}
+.numpad{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px;
+    width: 300px;
+}
+.display{
+    display: grid;
+    border: 1px solid #B5B1B6;
+    border-radius: 5px;
+    background-color: rgba(0, 187, 255, 0.1);
+    height: 90px;
+    
+}
+.display input{
+    display: block;
+  text-align: right;
+  padding: 8px 7px;
+  background: none;
+  font-size: 0.9rem;
+  color: #ffffff84;
+  border: none;
+}
+.display output{
+    display: block;
+    text-align: right;
+    padding: 0px 5px;
+    background: none;
+    font-weight: bold;
+    font-size: 2rem;
+    overflow: auto;
+}
+#history, #result{
+    text-align: right;
+}
+.numpad button{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    color: #ffffff;
+    background: transparent;
+    box-shadow: 0px 2px 5px grey;
+}
+.numpad button:hover{
+    color: black;
+    background-color: #3dbee5;
+}
+.numpad .equalbtn{
+    background-color: orange;
+    color :#ffffff !important;
+}
+.numpad .equalbtn:hover{
+    background-color: rgb(195, 127, 0) !important;
+}
+.numpad .operator:hover{
+    background-color: rgb(235, 235, 235);
+    color: #000000;
+}
+.numpad .operator{
+    color: rgb(255, 255, 255);
+}
+
+.old-history{
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    padding: 50px;
+    position: absolute;
+
+    img{
+        width: 400px;
+        height: 269px;
+        border-radius: 20px;
+        border: 2px solid black;
+    }
+    p{
+        width: 400px;
+        text-align: justify;
+    }
+}

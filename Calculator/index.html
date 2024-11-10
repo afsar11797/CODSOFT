@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="head">My Calculator</div>
+    <br />
+    <div class="calculator">
+      <section>
+        <div class="display">
+          <input type="text" id="history" value="" disabled />
+          <output name="result" id="result" for="input-text">0</output>
+        </div>
+      </section>
+      <section>
+        <div class="numpad">
+          <button data="all-clear">AC</button>
+          <button data="backspace">C</button>
+          <button data="percent" class="operator">%</button>
+          <button data-operator="+" class="operator">&plus;</button>
+          <button data-number="1">1</button>
+          <button data-number="2">2</button>
+          <button data-number="3">3</button>
+          <button data-operator="-" class="operator">&minus;</button>
+          <button data-number="4">4</button>
+          <button data-number="5">5</button>
+          <button data-number="6">6</button>
+          <button data-operator="*" class="operator">&times;</button>
+          <button data-number="7">7</button>
+          <button data-number="8">8</button>
+          <button data-number="9">9</button>
+          <button data-operator="/" class="operator">&divide;</button>
+          <button data-number="0" class="item">0</button>
+          <button data="dot">&sdot;</button>
+          <button data="calculate" class="operator equalbtn">&equals;</button>
+        </div>
+      </section>
+    </div>
+    <div class="old-history">
+      <img src="./1967_caltech.jpg" alt="" />
+      <br />
+      <h3>1967: First Handheld Calculator</h3>
+      <br />
+      <p>
+        A Brief History: According to the Texas Instruments website, “Cal Tech”
+        was the codename used for the device during its development, which was
+        released commercially in 1970. The 45-ounce calculator featured a small
+        keyboard with 18 keys and a visual output that displayed up to 12
+        decimal digits. <br />
+        <br />
+        Interesting Fact: The original 1967 prototype of the device can be found
+        in the Smithsonian Institution’s National Museum of American History.
+      </p>
+    </div>
+    <section>
+      <div class="foot">
+        Designed & Developed by<br /><a
+          target="_blank"
+          href="https://www.linkedin.com/in/md-arsalan-afsar-b52b73237/"
+          >Md Arsalan Afsar</a
+        >
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
